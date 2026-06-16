@@ -59,7 +59,7 @@ export default function Portfolio() {
         Selected work
       </h2>
 
-      <div ref={ref} style={{
+      <div ref={ref} className="portfolio-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(2, 1fr)',
         gap: '1.25rem',

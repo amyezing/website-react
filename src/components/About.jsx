@@ -43,7 +43,7 @@ export default function About() {
       </h2>
 
       {/* Grid */}
-      <div ref={ref} style={{
+      <div ref={ref} className="about-grid" style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gap: '2rem',

@@ -56,7 +56,7 @@ export default function Services() {
         What I bring to the table
       </h2>
 
-      <div ref={ref} style={{
+      <div ref={ref} className="services-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
         gap: '1.25rem',

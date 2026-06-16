@@ -66,7 +66,7 @@ export default function Contact() {
         Let's work together
       </h2>
 
-      <div ref={ref} style={{
+      <div ref={ref} className="contact-grid" style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gap: '5rem',
