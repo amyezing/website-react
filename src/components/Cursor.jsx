@@ -7,6 +7,8 @@ export default function Cursor() {
   const ring = useRef({ x: 0, y: 0 })
 
   useEffect(() => {
+
+    if (window.innerWidth < 768) return // Disable on mobile
     const onMove = (e) => {
       mouse.current = { x: e.clientX, y: e.clientY }
       if (dotRef.current) {
@@ -70,6 +72,8 @@ export default function Cursor() {
       })
     }
   }, [])
+  
+   if (window.innerWidth < 768) return null
 
   return (
     <>
