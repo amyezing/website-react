@@ -4,6 +4,10 @@ html, body, a, button, input, textarea, * {
   cursor: none !important;
 }
 
+.hamburger {
+  display: none;
+}
+
 :root {
   --bg: #0d0d0f;
   --bg2: #131316;
