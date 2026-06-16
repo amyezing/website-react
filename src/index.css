@@ -59,3 +59,11 @@ body {
     gap: 2rem !important;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+  .nav-cta { display: none !important; }
+  .hamburger { display: block !important; }
+  nav { padding: 1rem 1.5rem !important; }
+}
+
