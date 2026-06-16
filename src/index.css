@@ -8,6 +8,10 @@ html, body, a, button, input, textarea, * {
   display: none;
 }
 
+.nav-links {
+  display: flex;
+}
+
 :root {
   --bg: #0d0d0f;
   --bg2: #131316;
@@ -62,9 +66,12 @@ body {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
   }
-}
 
-@media (max-width: 768px) {
+  .exp-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.4rem !important;
+  }
+
   .nav-links { display: none !important; }
   .nav-cta { display: none !important; }
   .hamburger { display: block !important; }
