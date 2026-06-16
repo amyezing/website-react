@@ -74,6 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
+          className="hero-buttons"
           style={{ display: 'flex', gap: '1rem' }}
         >
           <a href="#portfolio" style={{

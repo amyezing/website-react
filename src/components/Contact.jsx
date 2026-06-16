@@ -162,6 +162,7 @@ export default function Contact() {
 
           <motion.button
             type="submit"
+            className="btn-submit"
             whileHover={{ y: -2, boxShadow: '0 8px 20px rgba(184,240,200,0.15)' }}
             style={{
               background: sent ? '#7edba0' : 'var(--accent)',
