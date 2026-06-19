@@ -14,6 +14,10 @@ export default function Marquee() {
       padding: '0.9rem 0',
       overflow: 'hidden',
       background: 'var(--bg2)',
+      width: '100%',
+      maxWidth: '100vw',
+      boxSizing: 'border-box',
+
     }}>
       <div style={{
         display: 'flex',
