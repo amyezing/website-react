@@ -55,7 +55,7 @@ export default function Hero() {
             padding: 'clamp(1.25rem, 4vw, 2rem)',
             marginBottom: '1.5rem',
             maxWidth: '100%',
-            display: 'inline-block',
+            boxSizing: 'border-box',
           }}
         >
           <h1 style={{
