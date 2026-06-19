@@ -56,16 +56,18 @@ export default function Hero() {
             marginBottom: '1.5rem',
             maxWidth: '100%',
             boxSizing: 'border-box',
+            overflow: 'hidden',
           }}
         >
           <h1 style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(2rem, 8vw, 5.5rem)',
+            fontSize: 'clamp(1.6rem, 6.5vw, 5.5rem)',
             fontWeight: 800,
             lineHeight: 1.05,
             letterSpacing: '-0.03em',
             maxWidth: '100%',
             overflowWrap: 'break-word',
+            wordBreak: 'break-word',
           }}>
             <span style={{ display: 'block' }}>Frontend developer</span>
             <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
