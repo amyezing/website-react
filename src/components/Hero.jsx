@@ -44,24 +44,33 @@ export default function Hero() {
         </motion.div>
 
         {/* Title */}
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
           style={{
+            background: 'var(--bg2)',
+            border: '1px solid var(--border)',
+            borderRadius: 'var(--radius)',
+            padding: 'clamp(1.25rem, 4vw, 2rem)',
+            marginBottom: '1.5rem',
+            maxWidth: '100%',
+            display: 'inline-block',
+          }}
+        >
+          <h1 style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(2rem, 8vw, 5.5rem)',
             fontWeight: 800,
             lineHeight: 1.05,
             letterSpacing: '-0.03em',
-            marginBottom: '1.5rem',
             maxWidth: '100%',
             overflowWrap: 'break-word',
-          }}
-        >
-          <span style={{ display: 'block' }}>Frontend developer</span>
-          <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
-        </motion.h1>
+          }}>
+            <span style={{ display: 'block' }}>Frontend developer</span>
+            <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
+          </h1>
+        </motion.div> 
 
         {/* Subtitle */}
         <motion.p
