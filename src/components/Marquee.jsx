@@ -6,19 +6,22 @@ const items = [
 
 export default function Marquee() {
   const doubled = [...items, ...items]
-
   return (
     <div style={{
+      position: 'relative',
+      width: '100vw',
+      maxWidth: '100vw',
+      overflow: 'hidden',
       borderTop: '1px solid var(--border)',
       borderBottom: '1px solid var(--border)',
       padding: '0.9rem 0',
-      overflow: 'hidden',
       background: 'var(--bg2)',
     }}>
       <div style={{
         display: 'flex',
         width: 'max-content',
         animation: 'marquee 22s linear infinite',
+        willChange: 'transform',
       }}>
         {doubled.map((text, i) => (
           <span key={i} style={{
