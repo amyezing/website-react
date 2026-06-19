@@ -51,12 +51,6 @@ body {
   line-height: 1.6;
 }
 
-#home {
-  padding: 6rem 3rem 4rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -91,31 +85,6 @@ body {
   .nav-cta { display: none !important; }
   .hamburger { display: block !important; }
   nav { padding: 1rem 1.5rem !important; }
-
-  .hero-content h1,
-  .hero-content p {
-    text-align: center;
-  }
-
-  .hero-content > div:first-child,
-  .hero-content .hero-buttons {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
-
-  .hero-content > div:first-child {
-    width: fit-content;
-  }
-
-  #home {
-    padding: 5rem 1.5rem 3rem;
-    text-align: center;
-  }
-
-  #home .hero-buttons {
-    justify-content: center;
-  }
 
   .btn-submit {
     align-self: center !important;
