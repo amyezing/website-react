@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.7 }}
           style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp((2.2rem, 9vw, 5.5rem)',
+            fontSize: 'clamp(2.2rem, 9vw, 5.5rem)',
             fontWeight: 800,
             lineHeight: 1.0,
             letterSpacing: '-0.03em',

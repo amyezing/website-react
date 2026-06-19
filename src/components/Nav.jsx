@@ -23,7 +23,6 @@ export default function Nav() {
           position: 'fixed', top: 0, left: 0, right: 0,
           zIndex: 100,
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '1.1rem 3rem',
           borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
           background: scrolled ? 'rgba(13,13,15,0.88)' : 'transparent',
           backdropFilter: scrolled ? 'blur(14px)' : 'none',
