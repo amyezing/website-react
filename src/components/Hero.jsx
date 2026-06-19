@@ -2,12 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section id="home" style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      padding: '6rem 3rem 4rem',
-    }}>
+    <section id="home">
       <div className="hero-content">
         {/* Eyebrow pill */}
         <motion.div

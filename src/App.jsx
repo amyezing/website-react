@@ -36,7 +36,7 @@ export default function App() {
           color: 'var(--accent)',
           fontSize: '0.95rem',
         }}>Mary Rose Aquino</span>
-        <span>© 2025 · Built with React & Framer Motion</span>
+        <span>© 2026 · Built with React & Framer Motion</span>
       </footer>
     </>
   )
