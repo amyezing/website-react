@@ -8,7 +8,7 @@ export default function Hero() {
       alignItems: 'center',
       padding: '6rem 3rem 4rem',
     }}>
-      <div>
+      <div className="hero-content">
         {/* Eyebrow pill */}
         <motion.div
           initial={{ opacity: 0 }}
