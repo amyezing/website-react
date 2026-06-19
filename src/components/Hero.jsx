@@ -5,9 +5,19 @@ export default function Hero() {
     <section id="home" style={{
       minHeight: '100vh',
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
+      width: '100%',
+      maxWidth: '100vw',
+      boxSizing: 'border-box',
+      padding: 'clamp(1.5rem, 5vw, 3rem)',
+      paddingTop: 'clamp(5rem, 10vw, 7rem)',
+      overflow: 'hidden',
     }}>
-      <div className="hero-content">
+      <div style={{
+        width: '100%',
+        maxWidth: '900px',
+        margin: '0 auto',
+      }}>
         {/* Eyebrow pill */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -27,6 +37,7 @@ export default function Hero() {
             padding: '0.35rem 0.85rem',
             borderRadius: '999px',
             marginBottom: '2rem',
+            maxWidth: '100%',
           }}
         >
           Available for work
@@ -39,15 +50,17 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.7 }}
           style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(2.2rem, 9vw, 5.5rem)',
+            fontSize: 'clamp(2rem, 8vw, 5.5rem)',
             fontWeight: 800,
-            lineHeight: 1.0,
+            lineHeight: 1.05,
             letterSpacing: '-0.03em',
             marginBottom: '1.5rem',
+            maxWidth: '100%',
+            overflowWrap: 'break-word',
           }}
         >
-          Frontend developer<br />
-          <span style={{ color: 'var(--accent)' }}>&amp; UI designer</span>
+          <span style={{ display: 'block' }}>Frontend developer</span>
+          <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -56,7 +69,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
           style={{
-            fontSize: '1.1rem',
+            fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
             color: 'var(--muted)',
             maxWidth: '520px',
             lineHeight: 1.7,
@@ -73,8 +86,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.7 }}
-          className="hero-buttons"
-          style={{ display: 'flex', gap: '1rem' }}
+          style={{
+            display: 'flex',
+            gap: '1rem',
+            flexWrap: 'wrap',
+          }}
         >
           <a href="#portfolio" style={{
             background: 'var(--accent)',
