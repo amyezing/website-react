@@ -53,7 +53,6 @@ export default function Hero() {
             border: '1px solid var(--border)',
             borderRadius: 'var(--radius)',
             padding: 'clamp(1.25rem, 4vw, 2rem)',
-            width: '100%',
             marginBottom: '1.5rem',
             maxWidth: '100%',
             boxSizing: 'border-box',
@@ -62,15 +61,13 @@ export default function Hero() {
         >
           <h1 style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(1.6rem, 9vw, 5.5rem)',
+            fontSize: 'clamp(1.25rem, 6.5vw, 5.5rem)',
             fontWeight: 600,
             lineHeight: 1.05,
             letterSpacing: '-0.03em',
-            width: '100%',
             maxWidth: '100%',
             overflowWrap: 'break-word',
             wordBreak: 'break-word',
-            hyphens: 'auto',
           }}>
             <span style={{ display: 'block' }}>Frontend developer</span>
             <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
@@ -84,14 +81,10 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           style={{
             fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
-            width: '100%',
-            boxSizing: 'border-box',
             color: 'var(--muted)',
             maxWidth: '520px',
             lineHeight: 1.7,
             marginBottom: '2.5rem',
-            overflowWrap: 'break-word',
-            wordBreak: 'break-word',
           }}
         >
           Entry-level developer focused on Android &amp; web. I build
