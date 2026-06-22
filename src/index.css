@@ -102,12 +102,22 @@ body {
     padding: 1rem 1.5rem !important;
   }
 
-  #home h1 {
-    font-size: clamp(1.8rem, 9vw, 3rem) !important;
+   #home h1 {
+    width: 100% !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
   }
 
   #home p {
-    font-size: 0.95rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+  }
+
+  #home > div > div:nth-of-type(2) {
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   footer {
