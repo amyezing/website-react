@@ -66,6 +66,7 @@ export default function Hero() {
             fontWeight: 600,
             lineHeight: 1.05,
             letterSpacing: '-0.03em',
+            width: '100%',
             maxWidth: '100%',
             overflowWrap: 'break-word',
             wordBreak: 'break-word',
@@ -83,10 +84,14 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7 }}
           style={{
             fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
+            width: '100%',
+            boxSizing: 'border-box',
             color: 'var(--muted)',
             maxWidth: '520px',
             lineHeight: 1.7,
             marginBottom: '2.5rem',
+            overflowWrap: 'break-word',
+            wordBreak: 'break-word',
           }}
         >
           Entry-level developer focused on Android &amp; web. I build
