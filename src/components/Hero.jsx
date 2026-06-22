@@ -53,6 +53,7 @@ export default function Hero() {
             border: '1px solid var(--border)',
             borderRadius: 'var(--radius)',
             padding: 'clamp(1.25rem, 4vw, 2rem)',
+            width: '100%',
             marginBottom: '1.5rem',
             maxWidth: '100%',
             boxSizing: 'border-box',
@@ -61,13 +62,14 @@ export default function Hero() {
         >
           <h1 style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(1.25rem, 6.5vw, 5.5rem)',
+            fontSize: 'clamp(1.6rem, 9vw, 5.5rem)',
             fontWeight: 600,
             lineHeight: 1.05,
             letterSpacing: '-0.03em',
             maxWidth: '100%',
             overflowWrap: 'break-word',
             wordBreak: 'break-word',
+            hyphens: 'auto',
           }}>
             <span style={{ display: 'block' }}>Frontend developer</span>
             <span style={{ display: 'block', color: 'var(--accent)' }}>&amp; UI designer</span>
